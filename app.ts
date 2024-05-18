@@ -17,10 +17,7 @@ mongoose
   .connect(
     // "mongodb+srv://sivaanish399:aCaLhFiUYDisl3G5@cluster0.8djtiwu.mongodb.net/Student",
     "mongodb+srv://sivaanish399:aCaLhFiUYDisl3G5@cluster0.8djtiwu.mongodb.net/Student?retryWrites=true&w=majority&appName=Cluster0",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    } as Parameters<typeof mongoose.connect>[1]
+    { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true } as Parameters<typeof mongoose.connect>[1]
   ) // Type assertion
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err.message));
