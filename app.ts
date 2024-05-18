@@ -15,7 +15,8 @@ mongoose.set("strictQuery", true);
 
 mongoose
   .connect(
-    "mongodb+srv://sivaanish399:aCaLhFiUYDisl3G5@cluster0.8djtiwu.mongodb.net/Student",
+    // "mongodb+srv://sivaanish399:aCaLhFiUYDisl3G5@cluster0.8djtiwu.mongodb.net/Student",
+    "mongodb+srv://sivaanish399:aCaLhFiUYDisl3G5@cluster0.8djtiwu.mongodb.net/Student?retryWrites=true&w=majority&appName=Cluster0",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
