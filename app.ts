@@ -1,10 +1,10 @@
 import express from "express";
-import { studentRoutes } from "./routes/studentRoutes";
+import { studentRoutes } from "./Src/routes/studentRoutes";
 import mongoose from "mongoose";
 import cors from "cors";
 
 const app = express();
-const PORT  = process.env.PORT || 4000;;
+const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 
